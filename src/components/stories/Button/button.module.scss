@@ -1,0 +1,75 @@
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.bstButton {
+  padding: 10px 36px;
+  border-radius: 4px;
+  outline-color: #00bbff;
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 110 226 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-transform: capitalize;
+  // @apply bg-default text-buttonText;
+  text-transform: capitalize;
+
+  &:hover {
+    background: #106ebe;
+  }
+
+  &:disabled {
+    background: #f3f2f1;
+    color: #a19f9d;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 2px rgb(0, 51, 255);
+  }
+}
+
+.bstButtonSmall {
+  padding: 6px 24px;
+  font-size: small;
+}
+
+.bstButtonLarge {
+  padding: 12px 40px;
+  font-size: small;
+}
+
+.bstButtonCount {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  height: 18px;
+  width: 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #1f6ee2;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.bstButtonLoader {
+  display: flex;
+  align-items: center;
+}
+
+.bstButtonLoaderText {
+  padding-left: 1rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}

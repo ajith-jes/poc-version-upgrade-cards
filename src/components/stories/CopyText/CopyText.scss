@@ -1,0 +1,27 @@
+.bst-copy-text {
+    position: relative;
+    width: 100%;
+    &:hover {
+        .bst-copy-text__copyHint {
+            display: flex;
+        }
+    }
+}
+.bst-copy-text__copyHint {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: none;
+    cursor: pointer;
+    border-radius: 0.125rem/* 2px */;
+    display: inline-block;
+    padding: 0rem 0.5rem;
+}
+
+
+
+

@@ -1,0 +1,39 @@
+.bst-switch {
+    --color: #1F6EE2;
+    border-radius: 40px;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: .3s;
+    height: 26px;
+    width: 52px;
+
+    &--active {
+        background-color: var(--color);
+        border: 1px solid var(--color);
+
+        .bst-switch__handle {
+            left: 28px;
+            background-color: #fff;
+        }
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__handle {
+        transition: .3s;
+        top: 50%;
+        height: 22px;
+        width: 22px;
+        left: 1px;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        background-color: gray;
+        display: inline-block;
+        position: absolute;
+    }
+}

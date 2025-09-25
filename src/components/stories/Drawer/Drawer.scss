@@ -1,0 +1,26 @@
+
+
+.bst-drawer-li {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0px;
+        height: 70%;
+        border-radius: 0 8px 8px 0;
+        transition: .3s;
+        background-color: rgb(249 115 22);
+    }
+    &--active {
+        &::after {
+            width: 4px;
+            svg > path {
+                fill: rgb(249 115 22);
+            }
+        }
+    }
+}
+

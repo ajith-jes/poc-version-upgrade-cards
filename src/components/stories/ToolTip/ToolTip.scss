@@ -1,0 +1,41 @@
+.bst-ui-tooltip {
+  position: relative;
+  cursor: default;
+  &__data {
+    display: none;
+    position: absolute;
+    width: auto;
+    background: #000;
+    color: #fff;
+    padding: 4px 10px;
+    width: auto;
+    border-radius: 4px;
+    &--inline {
+      white-space: nowrap;
+    }
+    &--top {
+      top: -1rem;
+      left: 50%;
+      transform-origin: 0px 0px;
+      transform: translate(-50%, -50%);
+    }
+    &--bottom {
+      top: 2.6rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--left {
+      left: -150%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--right {
+      left: calc(100% + 10px);
+      top: 50%;
+      transform: translate(0%, -50%);
+    }
+  }
+  &:hover > &__data {
+    display: block;
+  }
+}

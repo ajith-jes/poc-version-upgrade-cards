@@ -1,0 +1,87 @@
+.auth-form {
+  form {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 2rem;
+    width: 450px;
+  }
+  &__title {
+    margin-left: 0px;
+  }
+  &__description  {
+    padding-bottom: 1.5rem;
+    p {
+      padding-top: 0.75rem;
+      --tw-text-opacity: 1;
+      color: rgb(51 51 51 / var(--tw-text-opacity));
+    }
+  }
+  &__forgot-password {
+    text-align: right;
+  }
+
+  &__update-password {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem/* 24px */;
+    width: 100%;
+    border-radius: 0.125rem/* 2px */;
+    &__cancel {
+      border: 1px solid;
+      outline-style: solid;
+      border-radius: 0.125rem/* 2px */;
+      box-sizing: border-box;
+      --tw-text-opacity: 1;
+      color: rgb(31 110 226 / var(--tw-text-opacity));
+      text-align: center;
+      background-color: white;
+      padding:  0.75rem 0px;
+    }
+    button[type=submit] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(31 110 226 / var(--tw-bg-opacity));
+      text-align: center;
+    }
+  }
+  &__button_center_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem/* 16px */;
+  }
+  &__text-center {
+    text-align: center;
+  }
+  &__login_link {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem/* 16px */;
+  }
+  &__cursor_pointer {
+    cursor: pointer;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+
+.password-validation-list {
+  padding-top: 1.25rem/* 20px */;
+  ul > li {
+    display: flex;
+    
+    .span1 {
+      --tw-scale-x: .75;
+      --tw-scale-y: .75;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+    .span2 {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+  }
+}
+
+

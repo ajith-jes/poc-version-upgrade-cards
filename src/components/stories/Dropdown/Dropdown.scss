@@ -1,0 +1,40 @@
+.bst-dropdown {
+  @apply inline-block relative;
+  &--left {
+    .bst-dropdown__content {
+      left: 0px;
+    }
+  }
+  &--right {
+    .bst-dropdown__content {
+      right: 0px;
+    }
+  }
+  &__trigger {
+    z-index: 2;
+    cursor: pointer;
+  }
+  &__content {
+    top: 100%;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    @apply absolute;
+    z-index: 2;
+    display: none;
+  }
+  &--active {
+    .bst-dropdown__content, .bst-dropdown__close {
+        display: block;
+    }
+  }
+  &__close {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.bst-toasters {
+    transform: translateX(290px);
+    &--active {
+        animation: showAnimation .2s 1 0s forwards linear;
+    }
+}
+
+
+@keyframes showAnimation {
+    0% {
+        transform: translateX(260px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+

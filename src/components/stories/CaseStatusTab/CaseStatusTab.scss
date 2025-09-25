@@ -1,0 +1,22 @@
+.bst-case-status-tab {
+  .flex-1 {
+    flex: 1;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  &__table_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1.25rem 0rem 1.25rem;
+    &__pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      select {
+        margin-left: 0.5rem/* 8px */;
+      }
+    }
+  }
+}

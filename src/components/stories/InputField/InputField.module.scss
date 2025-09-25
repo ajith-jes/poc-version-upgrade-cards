@@ -1,0 +1,107 @@
+.bst-input-field {
+  position: relative;
+  margin: 20px 0px;
+  margin-bottom: 24px;
+  display: inline-block;
+
+  &__label {
+    position: absolute;
+    top: -24px;
+    left: 0px;
+    cursor: pointer;
+  }
+
+  &--block {
+    @apply w-full;
+  }
+
+  &__input {
+    padding: 8px 14px;
+    // background-color: #ececec;
+    outline-color: #00bbff;
+    transition: 0.3s;
+    border-radius: 4px;
+    width: 400px !important;
+    background-color: white;
+    border: 1px solid #A9A9A9;
+    // border-radius: 2px;
+
+    &::-ms-reveal,
+    &::-ms-clear {
+      @apply hidden;
+    }
+
+    &:hover {
+      background-color: #cdcdcd;
+      cursor: pointer;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      cursor: text;
+    }
+
+    &--append {
+      padding-right: 35px;
+    }
+
+    &--prepend {
+      padding-left: 35px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+    &--append {
+      right: 8px;
+      transform: translateY(-50%) scale(0.8);
+    }
+
+    &--prepend {
+      left: 6px;
+      transform: translateY(-50%) scale(0.8);
+    }
+  }
+
+  &__error {
+    position: absolute;
+    top: calc(100% + 0px);
+    left: 0px;
+    width: 100%;
+    @apply text-error;
+    animation: errorAnimation .5s 1 forwards ease-in-out;
+  }
+
+  &--plain {
+    margin: 0px;
+  }
+}
+
+// .bst-input-field--plain {
+//   margin: 0px;
+// }
+
+@keyframes errorAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

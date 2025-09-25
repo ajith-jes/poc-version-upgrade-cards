@@ -1,0 +1,33 @@
+.selectSearch {
+  --color: gray;
+  .label {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .options {
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    padding: 10px 5px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 4px gray);
+    input {
+      width: 100%;
+      padding: 10px 5px;
+      border-bottom: 1px solid var(--color);
+    }
+    ul {
+      padding: 0px;
+      list-style: none;
+      li {
+        &:hover {
+          background-color: #ebebeb;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
